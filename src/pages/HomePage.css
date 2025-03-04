@@ -1,0 +1,44 @@
+.home-page {
+    position: relative;
+    background-color: black;
+    color: rgb(20, 17, 17);
+    overflow: hidden;
+  }
+  /* Profile Card Styling */
+.profile-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    text-align: center;
+    width: 250px; /* Set a fixed width for the card */
+  }
+  
+  .profile-card img {
+    width: 100%;  /* The image fills the width of the container */
+    height: 100%; /* The image fills the height of the container */
+    object-fit: cover; /* Ensures the image is cropped to fit the square */
+    border-radius: 8px; /* Optional: Rounds the edges of the image */
+  }
+  
+  /* Profile Image Container (Square) */
+  .profile-image-container {
+    width: 30vw;  /* Makes the container responsive by using viewport width */
+    height: 30vw; /* Matches height with width for a square aspect */
+    max-width: 150px; /* Optional: Set a max-width for larger screens */
+    max-height: 150px; /* Optional: Set a max-height for larger screens */
+    margin: 0 auto;  /* Centers the image */
+    border-radius: 8px; /* Optional: Rounds the edges of the square */
+    overflow: hidden; /* Ensures the image is clipped into the square shape */
+    display: inline-block; /* Keeps the image centered */
+  }
+  
+  /* Ensure the profile card remains centered and scales well on smaller screens */
+  @media (max-width: 600px) {
+    .profile-image-container {
+      width: 50vw;  /* Adjusts to 50% of viewport width on smaller screens */
+      height: 50vw; /* Maintains the square aspect */
+    }
+  }
+  
